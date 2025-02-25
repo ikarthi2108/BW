@@ -1,0 +1,235 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+export const theme = {
+  background: '#ffffff',
+  text: '#1a1a1a',
+  primary: '#2563eb',
+  secondary: '#f59e0b',
+  accent: '#4f46e5',
+  headerBg: '#ffffff',
+};
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    backgroundColor: theme.headerBg,
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+  },
+  headerLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: theme.text,
+    marginLeft: 8,
+  },
+  profileButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: theme.primary,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  hero: {
+    padding: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 300,
+    backgroundColor: theme.background,
+  },
+  heroTitle: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 16,
+    color: theme.text,
+  },
+  heroSubtitle: {
+    fontSize: 18,
+    textAlign: 'center',
+    marginBottom: 24,
+    color: theme.text,
+    paddingHorizontal: 20,
+  },
+  ctaContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 16,
+  },
+  ctaButton: {
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    elevation: 2,
+  },
+  ctaButtonText: {
+    color: '#ffffff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  section: {
+    padding: 20,
+    backgroundColor: theme.background,
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: theme.text,
+  },
+  categoriesContainer: {
+    paddingHorizontal: 20,
+    gap: 16,
+  },
+  categoryCard: {
+    padding: 16,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 2,
+    width: 120,
+    height: 120,
+    marginRight: 16,
+    backgroundColor: theme.background,
+  },
+  categoryTitle: {
+    marginTop: 8,
+    fontSize: 14,
+    fontWeight: '600',
+    textAlign: 'center',
+    color: theme.text,
+  },
+  stepsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 20,
+  },
+  step: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  stepIcon: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 8,
+    backgroundColor: theme.primary,
+  },
+  stepNumber: {
+    color: '#ffffff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  stepText: {
+    fontSize: 14,
+    fontWeight: '600',
+    textAlign: 'center',
+    color: theme.text,
+  },
+  benefitsContainer: {
+    gap: 16,
+  },
+  benefitItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  benefitText: {
+    fontSize: 16,
+    color: theme.text,
+  },
+  testimonialContainer: {
+    position: 'relative',
+    minHeight: 200,
+  },
+  testimonialCard: {
+    padding: 16,
+    borderRadius: 12,
+    elevation: 2,
+    position: 'absolute',
+    width: '100%',
+    backgroundColor: theme.background,
+  },
+  testimonialHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  testimonialAvatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#e5e7eb',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+  },
+  testimonialName: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: theme.text,
+  },
+  testimonialRole: {
+    fontSize: 14,
+    color: theme.text,
+  },
+  testimonialText: {
+    fontSize: 14,
+    lineHeight: 20,
+    marginBottom: 12,
+    color: theme.text,
+  },
+  ratingContainer: {
+    flexDirection: 'row',
+    gap: 4,
+  },
+  testimonialDots: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 8,
+    marginTop: 220,
+  },
+  testimonialDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+  },
+  footer: {
+    padding: 20,
+    borderTopWidth: 1,
+    backgroundColor: theme.background,
+  },
+  footerLinks: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: 20,
+  },
+  footerLink: {
+    fontSize: 14,
+    color: theme.text,
+  },
+  socialIcons: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 20,
+  },
+  socialIcon: {
+    padding: 8,
+  },
+});
