@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Alert } from 'react-native';
 
 
-const API_URL = 'http://172.20.10.7:5000/api';
+const API_URL = 'http://192.168.0.102:5000/api';
 
 const apiClient = axios.create({
   baseURL: API_URL,
